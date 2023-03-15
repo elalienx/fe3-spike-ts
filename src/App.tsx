@@ -12,11 +12,11 @@ export default function App() {
   const [status, setStatus] = useState(eFetchStatus.loading);
 
   // Properties
-  const mockarooURL: string =
+  const endpoint: string =
     "https://my.api.mockaroo.com/insta-orders.json?key=e49e6840";
 
   useEffect(() => {
-    loadData(mockarooURL);
+    loadData(endpoint);
   }, []);
 
   async function loadData(url: string) {
